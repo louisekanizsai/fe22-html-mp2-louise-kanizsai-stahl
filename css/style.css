@@ -1,0 +1,171 @@
+/* Allmänt: */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(52, 66, 55);
+    color: rgb(216, 220, 216);
+}
+
+main {
+    display: grid;
+    grid-template-rows: 4rem 1fr 6rem;
+    grid-template-columns: 50% 12% 26% 12%;
+    min-height: 100vh;
+}
+
+svg {
+    margin-right: 10px;
+    vertical-align: text-bottom;
+}
+
+.sideimage {
+    width: 100%;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.aside {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    margin-top: 40%;
+}
+
+/* Navbar: */
+
+header {
+    grid-row: 1/2;
+    grid-column: 1/5;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 1.1rem;
+}
+
+nav ul li a:link {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: .8em;
+    margin: 4rem;
+    color: rgb(216, 220, 216);
+}
+
+nav ul li a:visited {
+    color: rgb(216, 220, 216);
+}
+
+nav ul li a:hover {
+    color: #d8dcd8;
+    border-bottom: 1px solid rgba(216, 220, 216, 0.8);
+    padding-bottom: .3rem;
+}
+
+/* Footer: */
+
+footer {
+    grid-row: 3/4;
+    grid-column: 1/5;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    font-size: .9rem;
+    margin: 2rem;
+}
+
+/* Förstasidan */
+
+h1 {
+    font: 5.5rem 'Oranienbaum', serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+h2 {
+    font: 400 1.5rem 'Oranienbaum', serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 6px;
+    margin-left: 8px;
+}
+
+section p {
+    font-size: .8em;
+    line-height: 170%;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    color: rgba(216, 220, 216, 0.8);
+}
+
+/* Meny-sidan */
+
+.menu {
+    grid-row: 2/3;
+    grid-column: 1/5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
+}
+
+.menu div img {
+    width: 100%;
+}
+
+.menu div {
+    width: 350px;
+    border: 1px solid rgba(216, 220, 216, 0.8);
+    padding: 15px;
+}
+
+h3 {
+    font-family: 'Oranienbaum', serif;
+    text-align: center;
+    margin: 10px 0 -15px 0;
+}
+
+/* Boka bord-sidan: */
+
+form {
+    font-size: .9em;
+}
+
+input, textarea {
+    margin: .5% 0% 5% 0%;
+    width: 100%;
+    color: rgb(39, 49, 41);
+    background-color: rgba(216, 220, 216, 0.7);
+    border: 1px solid rgb(216, 220, 216);
+}
+
+input:focus, textarea:focus {
+    background-color: rgba(216, 220, 216, 0.6);
+    outline: none;
+}
+
+button {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: .8em;
+    color: rgb(216, 220, 216);
+    background-color: rgb(52, 66, 55);
+    border: 1px solid rgba(216, 220, 216, 0.8);
+    padding: 8px 12px;
+    margin: 0 auto;
+}
